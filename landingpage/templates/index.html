@@ -1,33 +1,99 @@
 {% load static %}
-<!DOCTYPE html>
-
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-    <title>Hyperspace by HTML5 UP</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
-    <noscript
-      ><link rel="stylesheet" href="{% static 'css/noscript.css' %}"
-    /></noscript>
-  </head>
-  <body class="is-preload">
-    <!-- Sidebar -->
-    <section id="sidebar">
-      <div class="inner">
-        <nav>
-          <ul>
-            <li><a href="#intro">Welcome</a></li>
-            <li><a href="#one">What does it do?</a></li>
-            <li><a href="#two">What we do</a></li>
-            <li><a href="#three">Get in touch</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
+	<head>
+		<title>SEE ALL MONEY</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'css/noscript.css' %}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">HOME</a></li>
+							<li><a href="#one">What does it do?</a></li>
+							<li><a href="#two">What we do</a></li>
+							<li><a href="#three">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<div class="idea">
+								<div class='mockup'>
+									<img src="{% static 'images/idea2.png' %}" alt="" />
+								</div>
+								<div class="name">
+									<h1>SEE ALL MONEY</h1>
+									<p>친구 혹은 연인에게 돈 문제로 질문하기 어려우셨나요?<br />
+									더치페이 정산 때문에 스트레스 받았던 적이 있으셨나요?<br /> 
+									연인과의 데이트, 친구들과의 여행 때 마다 서로의 예산을<br /> 고려하기에는 많은 어려움이 따릅니다.</p>
+									<p class="sam"> 한눈에 보기 쉽게 서로의 예산을 비교하며 효율적으로 <br/>SEE ALL MONEY에서 관리해보세요!</p>
+								</div>
+							</div>
+							<div class="act">
+								<ul class="actions">
+									<li><a href="#one" class="button scrolly">Learn more</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="{% static 'images/pic01.jpg' %}" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Sed ipsum dolor</h2>
+									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="{% static 'images/pic02.jpg' %}" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Feugiat consequat</h2>
+									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="{% static 'images/pic03.jpg' %}" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Ultricies aliquam</h2>
+									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
 
     <!-- Wrapper -->
     <div id="wrapper">
@@ -46,6 +112,7 @@
           </ul>
         </div>
       </section>
+
 
       <!-- One -->
       <section id="one" class="wrapper style2 spotlights">
@@ -113,6 +180,7 @@
         </section>
       </section>
 
+
       <!-- Two -->
       <section id="two" class="wrapper style3 fade-up">
         <div class="inner">
@@ -179,110 +247,68 @@
         </div>
       </section>
 
-      <!-- Three -->
-      <section id="three" class="wrapper style1 fade-up">
-        <div class="inner">
-          <h2>Get in touch</h2>
-          <p>
-            Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-            turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus,
-            lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
-            imperdiet est velit quis lorem.
-          </p>
-          <div class="split style1">
-            <section>
-              <form method="post" action="#">
-                <div class="fields">
-                  <div class="field half">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" />
-                  </div>
-                  <div class="field half">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email" />
-                  </div>
-                  <div class="field">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="5"></textarea>
-                  </div>
-                </div>
-                <ul class="actions">
-                  <li><a href="" class="button submit">Send Message</a></li>
-                </ul>
-              </form>
-            </section>
-            <section>
-              <ul class="contact">
-                <li>
-                  <h3>Address</h3>
-                  <span
-                    >12345 Somewhere Road #654<br />
-                    Nashville, TN 00000-0000<br />
-                    USA</span
-                  >
-                </li>
-                <li>
-                  <h3>Email</h3>
-                  <a href="#">user@untitled.tld</a>
-                </li>
-                <li>
-                  <h3>Phone</h3>
-                  <span>(000) 000-0000</span>
-                </li>
-                <li>
-                  <h3>Social</h3>
-                  <ul class="icons">
-                    <li>
-                      <a href="#" class="icon brands fa-twitter"
-                        ><span class="label">Twitter</span></a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="icon brands fa-facebook-f"
-                        ><span class="label">Facebook</span></a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="icon brands fa-github"
-                        ><span class="label">GitHub</span></a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="icon brands fa-instagram"
-                        ><span class="label">Instagram</span></a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="icon brands fa-linkedin-in"
-                        ><span class="label">LinkedIn</span></a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </section>
-          </div>
-        </div>
-      </section>
-    </div>
 
-    <!-- Footer -->
-    <footer id="footer" class="wrapper style1-alt">
-      <div class="inner">
-        <ul class="menu">
-          <li>&copy; Untitled. All rights reserved.</li>
-          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-      </div>
-    </footer>
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h1>See All Money팀의 팀원을 소개합니다 😎</h1>
+							<div style="display: 
+										flex; gap: 5rem; 
+										flex-wrap: wrap;
+										margin: 8rem 0 5rem 0;">
+								<div>
+									<img src="{% static 'images/a4ca39df43fe68b0e0c2f568870ff851-sticker.png' %}">
+									<h2
+									style="text-align: center;"
+									>강지희</h2>
+									<p
+									style="text-align: center;"
+									>"10기 프론트엔드 탑이 되겠습니다 화이팅!"</p>
+								</div>
+								<div>
+									<img src="{% static 'images/23cd1df9799f6f7718d3c81c36a7e1ce-sticker.png' %}">
+									<h2
+									style="text-align: center;"
+									>공규환</h2>	
+									<p
+									style="text-align: center;"
+									>"이번 멋사 백엔드 에이스는 접니다"</p>
+								</div>
+								<div>
+									<img src="{% static 'images/3ffc0228e952ddbc2a75097f14701eb4-sticker.png' %}">
+									<h2
+									style="text-align: center;"
+									>박재욱</h2>
+									<p
+									style="text-align: center;"
+									>"멋사 10기 백엔드는 저에게 맡겨주세요"</p>
+								</div>
+							</div>
+							<p style="opacity: 0.3; font-size: 18px;">도운 운영진 : 이재성(9기), 이도연(9기)</p>
+							<div class="split style1">
+							</div>
+						</div>
+					</section>
 
-    <!-- Scripts -->
-    <script src="{% static 'js/jquery.min.js' %}"></script>
-    <script src="{% static 'js/jquery.scrollex.min.js' %}"></script>
-    <script src="{% static 'js/jquery.scrolly.min.js' %}"></script>
-    <script src="{% static 'js/browser.min.js' %}"></script>
-    <script src="{% static 'js/breakpoints.min.js' %}"></script>
-    <script src="{% static 'js/util.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy;멋쟁이사자처럼 10th at 경상국립대</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'js/browser.min.js' %}"></script>
+			<script src="{% static 'js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'js/util.js' %}"></script>
+			<script src="{% static 'js/main.js' %}"></script>
+
+
+
   </body>
 </html>
