@@ -115,7 +115,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.55);
+		color: rgba(255, 255, 255, 0.679);
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
@@ -187,7 +187,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 2.75em;
+		font-size: 3em;
 	}
 
 		h1.major {
@@ -237,7 +237,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h1 {
-			font-size: 2em;
+			font-size: 2.5em;
 		}
 
 		h2 {
@@ -3874,29 +3874,42 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		background-image: url('images/intro2.svg'); /*수정*/
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 	}
+		#intro > .inner {
+			padding: 5em 0em 3em 5em;
+		}
 
 		#intro p {
-			font-size: 1.25em;
+			font-size: 0.9em;
+			
+		}
+
+		#intro p.sam {
+			font-size: 1em;
+			color: #ffffff;
 		}
 
 			@media screen and (max-width: 980px) {
 
-				#intro p br {
+				/* #intro p br {
 					display: none;
-				}
+				} */
 
 			}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 680px) {
 
 				#intro p {
 					font-size: 1em;
 				}
+				#intro p.sam {
+					font-size: 1.05em;
+				}
+	
 
 			}
 
@@ -3904,6 +3917,67 @@ input, select, textarea {
 
 			#intro {
 				background-attachment: scroll;
+				background-image: url('images/intro3.svg');
 			}
 
 		}
+
+	/*idea*/
+	.idea {
+		display : flex; 
+		justify-content:space-between; 
+		align-items:center; 
+		flex-direction: row-reverse;
+	}
+		
+		@media screen and (max-width: 1680px) {
+			#intro > .inner {
+				padding: 4em 0em 2em 4em;
+			}
+			.mockup {
+				padding-left: 1em;
+			}
+		}
+
+		@media screen and (max-width: 1080px) {
+			
+		}
+
+		@media screen and (max-width: 680px) {
+			.idea {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+			}
+			.mockup {
+				padding-bottom: 1em;
+				padding-left: 0em;
+			}
+			#intro > .inner {
+				padding: 2em 0em 2em 2em;
+			}
+			#intro {
+				background-image: url('images/intro4.svg');
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			#intro > .inner {
+				padding: 2em 0em 2em 2em;
+			}
+			.act {
+				padding-right: 2em;
+			}
+			.name {
+				padding-right: 1em;
+			}
+		}
+	
+	.mockup {
+		max-width: 680px;
+		width: 100%;
+	}
+	.mockup >img {
+		display: block;
+		width: 100%;
+	}
