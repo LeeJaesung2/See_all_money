@@ -1,2 +1,1 @@
-# share_all_money
- 
+# see_all_money
