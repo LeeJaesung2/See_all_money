@@ -3262,6 +3262,8 @@ input, select, textarea {
 		.wrapper.style3-alt {
 			background-color: #953d75;
 		}
+
+
 		
 
 		.wrapper.fullscreen {
@@ -3979,6 +3981,14 @@ input, select, textarea {
 		width: 100%;
 	}
 	.mockup >img {
+		display: block;
+		width: 100%;
+	}
+
+	.VideoBox {
+		width:100%;
+	}
+	.VideoBox {
 		display: block;
 		width: 100%;
 	}
