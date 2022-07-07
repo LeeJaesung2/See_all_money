@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-0&o(s8=9cx2gmth#=ezbx=r+l@k&itj-b16yvg!igp0g@=1te!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','herokuapp.com']
 
 
 # Application definition
@@ -48,13 +48,15 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'see_all_money.urls'
 import os
 
 STATIC_URL='/static/'
-STATICFILES_DIRS=[os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS=[os.path.join(BASE_DIR, '/static')]
+STATIC_ROOT = os.path.join(BASE_DIR, '.static_root')
 
 TEMPLATES = [
     {
